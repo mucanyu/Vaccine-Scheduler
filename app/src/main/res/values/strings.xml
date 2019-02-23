@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Mobil Aşı Takibi</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Ayarlar</string>
+    <string name="title_activity_test">testActivity</string>
+    <string name="title_activity_add_child">AddChildActivity</string>
+    <string name="title_activity_bottom_nav_bar_test">BottomNavBarTestActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+</resources>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:padding="15dp">
+
+    <ImageView
+        android:id="@+id/ImageViewisVaccinated"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:contentDescription="Child Picture"/>
+
+    <TextView
+        android:id="@+id/textViewVaccineName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="15dp"
+        android:paddingTop="3dp"
+        android:text="TextView"
+        android:textSize="15sp" />
+
+    <!--<TextView-->
+        <!--android:id="@+id/textViewDivider"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:paddingLeft="5dp"-->
+        <!--android:paddingTop="3dp"-->
+        <!--android:text="-"-->
+        <!--android:textSize="15sp" />-->
+
+    <!--<TextView-->
+        <!--android:id="@+id/textViewVaccineDate"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:paddingLeft="5dp"-->
+        <!--android:paddingTop="3dp"-->
+        <!--android:text="TextView"-->
+        <!--android:textSize="15sp" />-->
+
+</LinearLayout>

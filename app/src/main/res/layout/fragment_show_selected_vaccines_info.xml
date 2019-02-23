@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <include layout="@layout/toolbar" />
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:padding="15dp">
+
+        <ImageView
+            android:id="@+id/imageViewSelectedVacPage_ChildImg"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/girl"
+            android:contentDescription="Child Picture"/>
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="bottom"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textViewSelctdVacPage_ChildName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10dp"
+                    android:paddingBottom="32dp"
+                    android:text="TextView"
+                    android:textSize="15sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:gravity="bottom"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/textViewSelectedPage_vaccineDate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="13dp"
+                        android:text="12.05.2019"
+                        android:textColor="@color/black" />
+
+                    <Switch
+                        android:id="@+id/switch1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:paddingLeft="10dp"
+                        android:text="Seçim   "
+                        android:textColor="@color/white"
+                        android:layoutDirection="rtl"
+                        app:switchPadding="8dp"
+                        />
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </android.support.constraint.ConstraintLayout>
+
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/divider3"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="?android:attr/listDivider"
+        android:foregroundTint="@color/black"/>
+
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="15dp">
+
+        <TextView
+            android:id="@+id/textViewSelctdVacPage_VaccineName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hepatit B - 1"
+            android:paddingTop="20dp"
+            android:paddingBottom="6dp"
+            android:textColor="@color/black"
+            android:textSize="23sp" />
+
+        <TextView
+            android:id="@+id/textViewSelctdVacPage_VaccineInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tetanos aşısı yerine TD aşısı uygulandığında çocukluk dönemindeki difteri aşılamasının pekiştirme dozu yapılmakta, önceden bağışıklanmamış difteriye duyarlı kişilerin de bağışıklanması sağlanmaktadır. Gebelik de dahil tetanos aşısı gereken her durumda TD aşısı uygulanmalıdır."
+            android:textColor="@color/white"
+            android:textSize="15dp"
+            />
+
+    </LinearLayout>
+</LinearLayout>

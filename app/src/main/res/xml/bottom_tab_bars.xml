@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tabs>
+    <tab
+        id="@+id/tab_mySchedule"
+        icon="@drawable/tab_date"
+        barColorWhenSelected="#fda900"
+        activeColor="#000000"
+
+        title="Aşı Takvimi" />
+    <tab
+        id="@+id/tab_myChildrens"
+        icon="@drawable/tab_child"
+        barColorWhenSelected="#fda900"
+        activeColor="#000000"
+
+        title="Çocuklarım" />
+    <tab
+        id="@+id/tab_government"
+        icon="@drawable/tab_government"
+        barColorWhenSelected="#fda900"
+        activeColor="#000000"
+
+        title="Sağlık Bkn. Takvimi" />
+</tabs>

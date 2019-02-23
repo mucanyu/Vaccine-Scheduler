@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.sourcey.materiallogindemo.AddChildActivity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/toolbar" />
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <View
+            android:id="@+id/divider"
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:background="?android:attr/listDivider" />
+
+        <ImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/imageViewAddUserPicture"
+            android:layout_gravity="center_horizontal"
+            android:paddingTop="8dp"
+            android:layout_width="86dp"
+            android:layout_height="86dp"
+            android:src="@drawable/neutral_baby" />
+
+        <EditText
+            android:id="@+id/textViewAddName"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:autofillHints=""
+            android:hint="Ad Soyad"
+            android:inputType="text"
+            android:paddingTop="14dp"
+            android:textAlignment="center"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/textViewAddDateText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Doğum Tarihi"
+            android:textColorHint="@color/black"
+            android:textSize="20sp"
+            android:paddingTop="23dp"
+            android:textColor="@android:color/black"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="8dp"/>
+
+        <Button
+            android:id="@+id/btnAddSelectDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:backgroundTint="@android:color/holo_red_dark"
+            android:padding="10dp"
+            android:text="TARIH SEÇİN"
+            android:textColor="@android:color/white" />
+
+        <RadioGroup
+            android:id="@+id/radioGrpAdd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:paddingTop="18dp" >
+
+            <RadioButton
+                android:id="@+id/radioAddMaleGender"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:checked="false"
+                android:layout_weight="1"
+                android:textSize="18sp"
+                android:text="Erkek"
+                android:padding="12dp"
+                />
+
+            <RadioButton
+                android:id="@+id/radioAddFemaleGender"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:checked="false"
+                android:layout_weight="1"
+                android:textSize="18sp"
+                android:text="Kız"
+                android:padding="12dp"
+                />
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/btnAddKaydet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:text="KAYDET"
+            android:textSize="18sp"
+            android:background="@android:color/holo_red_dark"
+            android:textColor="@android:color/white" />
+
+    </LinearLayout>
+
+
+</LinearLayout>
